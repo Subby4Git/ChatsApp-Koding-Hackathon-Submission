@@ -1,0 +1,132 @@
+<!--
+ * Subhash Ramesh, 2014
+ * Team: TheHardKoders
+ * 
+ * ChatsUp Application
+ * 
+ * This is my first hackathon submission. It is a realtime, and most importantly
+ * a Globally translated chat application. There is one open room, in which users can chat. 
+ * 
+ * Users can chat in their language and recieve messages in their language. This is the same with 
+ * every user. This way, people who speak different languages, can talk with each other, despite their
+ * language difference. 
+ * 
+ * It's now possible for a person who speaks only English, to speak with a person who only speaks Chinese! Almost   real time (through the help of PubNub)!
+ * 
+ * This is the frontend HTML.
+ * 
+ * It uses Bootstrap, jQuery, and PubNub. Backend is NodeJS with Express + Redis
+ 
+ The Yandex Translation API can currently support 44 languages. 
+ 
+ PLEASE NOTE THERE IS A API LIMIT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ * 
+ * -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ChatsApp</title>
+    <!-- CSS (load bootstrap from a CDN) -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    
+    <!-- Animations and styles -->
+    <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bubblestyles.css">
+
+    <!-- jQuery Integration -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+    
+    <!-- PubNub Integration -->
+    <script src="http://cdn.pubnub.com/pubnub-3.7.1.min.js"></script>
+    
+    <!-- Text area helper js -->
+    <script src="textarea-helper.js"></script>
+    
+    <!-- Server/Client connection -->
+    <script src="connection.js"></script>
+    
+      <!-- External Translation ISO Codes Functions -->
+    <script src="lang.js"></script>
+    
+    <!-- Translate functions -->
+    <script src="translate.js"></script>
+    
+    <!-- Speech bubbles -->
+    <script src="speechbubble.js"></script>
+    
+    <!-- Utility functions -->
+    <script src="utils.js"></script>
+    
+    
+    
+    <!-- Mobile friendly! -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body class="container" style="padding:5px; padding-left: 1px; padding-right: 1px;">
+        
+
+        <!-- Add the language and dialect selector -->
+        <div id="options-menu" style='width: 100%; padding: 1px; position: relative; top: 4px; left 0px;'>
+             <label style="margin-right: 1px;">Select your language</label>
+             <select id="select_language"></select>
+        </div>
+         <label id="note-refresh" style=" font-family: 'Helvetica'; font-size: 9pt; color: #cccccc; float: left;">Please refresh the page for the previous chats to be translated.</label>
+
+         
+     <!--   <br>Speak incoming chats <input type="checkbox" id='tts' name="tts" value="tts"><br> -->
+
+        
+         <label contenteditable="true" ng-model="user_name" id="user-name" class="username" >User</label>
+         <br>
+     	 <label id="user-name-hint" style="text-align: right; position: relative; float: right;  margin: 0; margin-top: 4px; color: #cccccc; font-size: 8pt;" >Click to change your user name.</label>
+
+   <!-- View online people and count. -->
+  
+  
+	<div id='online_people' style=" padding: 1px; margin-top: 40px; width: 160px; height: 500px;border: none; right: 0px; position: absolute; margin-right: 80px;">
+	
+	
+	
+	    
+	</div> 
+
+		<div class="jumbotron" style="padding-top: 1px; background-color:transparent; padding-bottom:0px;">
+	
+			<h1 style="float: center; position: relative; padding-left: 0px; text-align: center;">ChatsApp<img src='http://freeflaticons.net/wp-content/uploads/2014/10/talk-copy-141265417284gnk.png' style='margin-left: 15px; margin-bottom: 5px; padding: 0px; position:relative; width: 80px; height: 80px;'></h1>
+			<div style='font-size: 13pt; text-align: center; color: gray; font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 100;'>Global. Realtime. Translated automatically.</div>
+		</div>
+	
+
+
+<!-- Chats viewer -->	
+<section class="module">
+  
+  <div id="chats_viewer" class="discussion">
+    <!--Chat messages are added here as they come...-->
+  </div>
+  
+</section> 
+
+
+   
+   <div style="display:block;   width: 85%; position: fixed; bottom: 23px; float:center;">
+   <!-- Input text -->
+<img style="top: 30px; position:relative; float: right; width: 20px; height: 20px;" id="mic" src="http://cdns2.freepik.com/free-photo/microphone-voice_318-26622.jpg">
+   <input type="text" placeholder="Compose here. Then, click Enter." id="msg_text" style="padding: 3px; padding-right: 14px; padding: 10px; width: 100%; border: none; border-bottom: thin solid gray;"/>
+  
+   </div>
+   
+   
+   
+	
+   
+   
+</body>
+
+</html>

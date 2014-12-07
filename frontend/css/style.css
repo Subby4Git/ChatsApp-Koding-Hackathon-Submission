@@ -1,0 +1,109 @@
+  /* User's bubble */
+  .userbubble {
+    margin-right: 90px;
+    margin-bottom:70px;
+    float: right;
+    right: 0px;
+    position: absolute;
+    min-width: 250px;
+    min-height: 40px;
+    color: #ffffff;
+    padding: 15px;
+    background: #1291CC;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 1px 6px 0px #616161;
+    -moz-box-shadow: 0px 1px 6px 0px #616161;
+    box-shadow: 0px 1px 6px 0px #616161;
+    font-family: 'Helvetica';
+    display: block;
+}
+
+.user_element {
+    width: 100%;
+    text-align: right;
+    color: black;
+    font-size:9pt;
+    background-color:transparent;
+}
+
+	::-webkit-scrollbar {
+				width: 8px;
+			}
+			::-webkit-scrollbar-button {
+				width: 8px;
+				height:5px;
+			}
+			::-webkit-scrollbar-track {
+				background:#eee;
+				border: thin solid lightgray;
+				box-shadow: 0px 0px 3px #dfdfdf inset;
+				border-radius:10px;
+			}
+			::-webkit-scrollbar-thumb {
+				background:#999;
+				border: thin solid gray;
+				border-radius:10px;
+			}
+			::-webkit-scrollbar-thumb:hover {
+				background:#7d7d7d;
+			}
+
+  .userbubble:after {
+    content: "";
+    position: absolute;
+    top: 11px;
+    right: -15;
+    border-style: solid;
+    border-width: 15px 0 15px 15px;
+    border-color: transparent #1291CC;
+    display: block;
+    width: 0;
+    z-index: 1;
+}
+
+
+/* Other bubble */
+  .otherbubble {
+    margin-left: 90px;
+    position: relative;
+    min-width: 250px;
+    min-height: 40px;
+    padding: 0px;
+    background: #17b56e;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 1px 6px 0px #616161;
+    -moz-box-shadow: 0px 1px 6px 0px #616161;
+    box-shadow: 0px 1px 6px 0px #616161;
+}
+
+  .otherbubble:after {
+    content: "";
+    position: absolute;
+    top: 35px;
+    left: -15px;
+    border-style: solid;
+    border-width: 15px 15px 15px 0;
+    border-color: transparent #17b56e;
+    display: block;
+    width: 0;
+    z-index: 1;
+}
+
+
+
+/*User name's label */
+.username {
+    text-align: right;
+   /* max-width: 350px; */
+    margin:0;
+    position: relative;
+    float:right;
+    top:2px;
+    right:0px;
+    background-color:transparent;
+    color:black;
+}

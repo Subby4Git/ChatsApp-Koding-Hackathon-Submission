@@ -1,0 +1,117 @@
+@import url(http://weloveiconfonts.com/api/?family=typicons);
+[class*="typicons-"]:before {
+  font-family: 'Typicons', sans-serif;
+}
+
+.module {
+  width: 800px;
+  height:330px;
+  overflow:auto;
+  box-shadow: 0 0 10px white inset;
+  overflow-x:none;
+  margin: 20px auto;
+}
+
+.discussion {
+  list-style: none;
+  background: transparent;
+  margin: 0;
+  padding: 0 0 50px 0;
+}
+.discussion li {
+  padding: 0.5rem;
+  overflow: hidden;
+  display: flex;
+}
+.discussion .avatar {
+  width: 40px;
+  position: relative;
+}
+.discussion .avatar img {
+  display: block;
+  width: 100%;
+}
+
+.other .avatar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+ /* height: 0;*/
+  border: 5px solid rgb(243, 243, 243);
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+}
+
+.self {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.self .messages {
+  order: 1;
+  border-bottom-right-radius: 0;
+}
+.self .avatar {
+  order: 2;
+}
+.self .avatar::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  /*height: 0;*/
+  border: 5px solid #FFFA69;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  /*box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);*/
+}
+
+.messages-other {
+  max-width: 490px;
+  background: rgb(243, 243, 243);
+  padding: 15px;
+  border-radius: 2px;
+  box-shadow: 0 0px 3px rgba(0, 0, 0, 0.2);
+}
+.messages-other div {
+  word-wrap: break-word;
+  white-space:wrap;
+  display:flex;
+  font-size: 1.2rem;
+  margin: 0 0 0.2rem 0;
+}
+.messages-other .username_chatmsg_Label {
+  font-size: 1.0rem;
+  color: #919191;
+}
+
+.messages {
+  max-width: 490px;
+  background-color: #FFFA69;
+ /* background: rgb(243, 243, 243);*/
+  padding: 15px;
+  border-radius: 2px;
+  box-shadow: 0 0px 3px rgba(0, 0, 0, 0.2);
+}
+.messages div {
+  word-wrap: break-word;
+  white-space:wrap;
+  display:flex;
+  font-size: 1.2rem;
+  margin: 0 0 0.2rem 0;
+}
+.messages .username_chatmsg_Label {
+  font-size: 1.0rem;
+  color: #919191;
+}
+
+@keyframes pulse {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
