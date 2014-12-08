@@ -6,6 +6,8 @@ My Koding Hackathon submission - ChatsApp
 Hi guys. This is my GitHub repository for my ChatsApp application.
 
 ## Note to the Judges
+This application uses the Yandex Tranlsation API. However, it is on the free plan, so it has a limited quota of characters to be translated.
+
 This application works best in Google Chrome and does not work in Internet Explorer. Also, to understand the full effectiveness of this app, it would be better if there at least two people judging this app at the same time, so that it would be easier to see the realtime chat and translation. Thank you.
 
 ## Description
