@@ -20,11 +20,11 @@ This project addresses the theme behind the Communication theme, because it allo
 
 Here are some screenshots of my project in the Koding IDE. It definitely looks better in the browser!  ;)
 
-![ChatsApp-Hackathon](http://d.pr/i/18MR5/1Vj6kDsB "ChatsApp in my Koding IDE")
-![ChatsApp-Hackathon](http://d.pr/i/1bsZ2/3ggArEKs "ChatsApp in my Koding IDE")
-![ChatsApp-Hackathon](http://d.pr/i/1ftCO/2zcRQsd4 "ChatsApp in my Koding IDE")
-![ChatsApp-Hackathon](http://d.pr/i/1fvrI/238rpPp7 "ChatsApp in my Koding IDE")
-![ChatsApp-Hackathon](http://d.pr/i/1fvrI "ChatsApp in my Koding IDE")
+http://d.pr/i/18MR5/1Vj6kDsB
+http://d.pr/i/1bsZ2/3ggArEKs
+http://d.pr/i/1ftCO/2zcRQsd4
+http://d.pr/i/1fvrI/238rpPp7
+http://d.pr/i/1fvrI
 
 ## APIs used
 
