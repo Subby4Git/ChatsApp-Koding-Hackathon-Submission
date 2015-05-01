@@ -18,9 +18,8 @@ $(document).ready(function() {
 
 var rec;
 
-//PubNub Credentials. Please do not misuse! ;)
-var PUBLISH_KEY = 'pub-c-7d4ba0cd-edad-4840-9184-b7e3c363264b';
-var SUBSCRIBE_KEY = 'sub-c-83138d38-7c7d-11e4-b197-02ee2ddab7fe';
+var PUBLISH_KEY = '';
+var SUBSCRIBE_KEY = '';
 
 var pubNub;
 
